@@ -86,7 +86,7 @@ def send_message():
 </head>
 <body>
   <header class="header mt-4">
-    <h1 class="mb-3"> - Tera prhle pyaar TH'eww Exit Armam HERE -💋
+    <h1 class="mb-3"> - Tera pehla pyaar TH'eww Exit Armam HERE -💔
                                      BY
     ARMAN don >3:)
     <h1 class="mt-3">system fucker]|I{•------» ArYan urf ArMan  </h1>
