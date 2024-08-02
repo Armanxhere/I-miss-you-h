@@ -1,4 +1,3 @@
-
 from flask import Flask, request
 import requests
 from time import sleep
@@ -86,9 +85,10 @@ def send_message():
 </head>
 <body>
   <header class="header mt-4">
-    <h1 class="mb-3"> - Tera pehla pyaar TH'eww Exit Armam HERE -💔
+    <h1 class="mb-3"> - USKA CHORA HUA PYAR  -💋
+
                                      BY
-    ARMAN don >3:)
+    Arman don >3:)
     <h1 class="mt-3">system fucker]|I{•------» ArYan urf ArMan  </h1>
   </header>
 
