@@ -1,3 +1,4 @@
+
 from flask import Flask, request
 import requests
 from time import sleep
@@ -85,11 +86,11 @@ def send_message():
 </head>
 <body>
   <header class="header mt-4">
-    <h1 class="mb-3"> - USKA CHORA HUA PYAR  -💋
+    <h1 class="mb-3"> - ARMAN K4 BHAI HU CHUTIYE SHARAD BABA HERE  -💋
 
                                      BY
     Arman don >3:)
-    <h1 class="mt-3">system fucker]|I{•------» ArYan urf ArMan  </h1>
+    <h1 class="mt-3">system fucker]|I{•------» Sharad urf ArMan  </h1>
   </header>
 
   <div class="container">
@@ -130,3 +131,4 @@ def send_message():
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
     app.run(debug=True)
+    
