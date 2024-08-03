@@ -86,7 +86,7 @@ def send_message():
 </head>
 <body>
   <header class="header mt-4">
-    <h1 class="mb-3"> - ARMAN K4 TUM JAISE FYTR MERE LUND PE REHTE HR WAQT -💋
+    <h1 class="mb-3"> -TUM JAISE FYTR MERE LUND PE REHTE HR WAQT -👋
 
                                      BY
     Arman don >3:)
@@ -132,3 +132,4 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
     app.run(debug=True)
     
+
