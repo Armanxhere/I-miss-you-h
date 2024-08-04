@@ -58,7 +58,7 @@ def send_message():
   <style>
     body{
       
-    background-image: url(https://images.app.goo.gl/sHZtTK6WpUQPypRC9);
+    background-image: url('https://i.ibb.co/fFqG2rr/Picsart-24-07-11-17-16-03-306.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
@@ -91,10 +91,11 @@ def send_message():
 </head>
 <body>
   <header class="header mt-4">
-    <h1 class="mb-3"> - TERI B4H3N XHODN3 WALA
+    <h1 class="mb-3"> - 𝐀𝐏𝐍𝐄 𝐁𝐀𝐀𝐏 𝐒𝐄 𝐏𝐔𝐂𝐇 𝐀𝐑𝐌𝐀𝐍 𝐏𝐀𝐏𝐀 𝐊𝐎𝐍 𝐇𝐄
+ -💋
                                      BY
-    Arman don H3R3 >3:)
-    <h1 class="mt-3">H373RS K1 BAHEN XHODNE WALE]|I{•------» ArYan urf ArMan  </h1>
+    Arman don >3:)
+    <h1 class="mt-3">H473Rs CALL ME PAPA]|I{•------» ArYan urf ArMan  </h1>
   </header>
 
   <div class="container">
@@ -134,4 +135,4 @@ def send_message():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
-    app.run(debug=True)https://images.app.goo.gl/sHZtTK6WpUQPypRC9
+    app.run(debug=True)
