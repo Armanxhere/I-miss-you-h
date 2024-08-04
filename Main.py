@@ -58,7 +58,7 @@ def send_message():
   <style>
     body{
       
-    background-image: url();
+    background-image: url(https://images.app.goo.gl/sHZtTK6WpUQPypRC9);
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
