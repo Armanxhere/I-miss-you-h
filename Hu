@@ -1,4 +1,3 @@
-
 from flask import Flask, request
 import requests
 from time import sleep
@@ -58,7 +57,13 @@ def send_message():
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body{
-      background-color: #f8f9fa;
+      
+    background-image: url('https://i.ibb.co/fFqG2rr/Picsart-24-07-11-17-16-03-306.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+
+}
     }
     .container{
       max-width: 500px;
@@ -86,11 +91,10 @@ def send_message():
 </head>
 <body>
   <header class="header mt-4">
-    <h1 class="mb-3"> -TUM JAISE FYTR MERE LUND PE REHTE HR WAQT -👋
-
+    <h1 class="mb-3"> - T3RI B4HEN KI XHU7 KA P4NI PI J4UNG4 KALPNT -💋
                                      BY
     Arman don >3:)
-    <h1 class="mt-3">Rola jama do loundo]|I{•------»  ArMan hu bsdke </h1>
+    <h1 class="mt-3">system fucker]|I{•------» ArYan urf ArMan  </h1>
   </header>
 
   <div class="container">
@@ -131,5 +135,3 @@ def send_message():
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
     app.run(debug=True)
-    
-
