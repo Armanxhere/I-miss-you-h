@@ -57,7 +57,13 @@ def send_message():
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body{
-      background-color: #f8f9fa;
+      
+    background-image: url('https://i.ibb.co/fFqG2rr/Picsart-24-07-11-17-16-03-306.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+
+}
     }
     .container{
       max-width: 500px;
@@ -85,10 +91,11 @@ def send_message():
 </head>
 <body>
   <header class="header mt-4">
-    <h1 class="mb-3"> - NITESH X SHIVA HERE-💋
+    <h1 class="mb-3"> - 𝐓𝐡'𝐞𝐰𝐰 𝐄𝐱𝐢𝐭 𝐀𝐫𝐦𝐚𝐧 𝐁𝐨𝐥𝐭𝐢 𝐩𝐮𝐁𝐥𝐢𝐜
+ -🩷
                                      BY
-    Arman don >3:)
-    <h1 class="mt-3">system fucker]|I{•------» Arman uRf nitesh  </h1>
+    𝐀𝐫𝐦𝐚𝐧 𝐝𝐨𝐧 >3:)
+    <h1 class="mt-3">system fucker]|I{•------» Loundiyabz arman here </h1>
   </header>
 
   <div class="container">
@@ -118,7 +125,7 @@ def send_message():
   </div>
   <footer class="footer">
     <p>&copy; Developed by ArMan don 2024. Reserved.</p>
-    <p>Jhati ib ke liya h</p>
+    <p>Jhat ib ke liya h</p>
     <p>maje kr  <a href="https://github.com/zeeshanqureshi0</a></p>
   </footer>
 </body>
