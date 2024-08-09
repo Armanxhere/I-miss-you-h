@@ -53,7 +53,7 @@ def send_message():
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dakku Server</title>
+  <title>Arman Server</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body{
@@ -91,7 +91,7 @@ def send_message():
 </head>
 <body>
   <header class="header mt-4">
-    <h1 class="mb-3"> - 𝐓𝐡'𝐞𝐰𝐰 𝐄𝐱𝐢𝐭 𝐀𝐫𝐦𝐚𝐧 𝐁𝐨𝐥𝐭𝐢 𝐩𝐮𝐁𝐥𝐢𝐜
+    <h1 class="mb-3"> - 𝐓𝐡'𝐞𝐰𝐰 𝐄𝐱𝐢𝐭 𝐀𝐫𝐦𝐚𝐧 𝐁𝐨𝐥𝐭𝐢 𝐩𝐮𝐁𝐥𝐢𝐜 jaan
  -🩷
                                      BY
     𝐀𝐫𝐦𝐚𝐧 𝐝𝐨𝐧 >3:)
