@@ -53,7 +53,7 @@ def send_message():
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arman Server</title>
+  <title>Dakku Server</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body{
@@ -91,11 +91,11 @@ def send_message():
 </head>
 <body>
   <header class="header mt-4">
-    <h1 class="mb-3"> - 𝐓𝐡'𝐞𝐰𝐰 𝐄𝐱𝐢𝐭 𝐀𝐫𝐦𝐚𝐧 𝐁𝐨𝐥𝐭𝐢 𝐩𝐮𝐁𝐥𝐢𝐜 jaan
- -🩷
+    <h1 class="mb-3"> - 𝐀𝐏𝐍𝐄 𝐁𝐀𝐀𝐏 𝐒𝐄 𝐏𝐔𝐂𝐇 𝐀𝐑𝐌𝐀𝐍 𝐏𝐀𝐏𝐀 𝐊𝐎𝐍 𝐇𝐄
+ -💋
                                      BY
-    𝐀𝐫𝐦𝐚𝐧 𝐝𝐨𝐧 >3:)
-    <h1 class="mt-3">system fucker]|I{•------» Loundiyabz arman here </h1>
+    Arman don >3:)
+    <h1 class="mt-3">H473Rs CALL ME PAPA]|I{•------»  ArMan  </h1>
   </header>
 
   <div class="container">
@@ -125,7 +125,7 @@ def send_message():
   </div>
   <footer class="footer">
     <p>&copy; Developed by ArMan don 2024. Reserved.</p>
-    <p>Jhat ib ke liya h</p>
+    <p>Jhati ib ke liya h</p>
     <p>maje kr  <a href="https://github.com/zeeshanqureshi0</a></p>
   </footer>
 </body>
