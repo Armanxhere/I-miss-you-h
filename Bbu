@@ -82,7 +82,7 @@ def send_message():
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body{
-      background-color: white;
+      background-color: https://images.app.goo.gl/w9D2NifJWvQMqPuNA;
     }
     .container{
       max-width: 300px;
@@ -112,7 +112,7 @@ def send_message():
   <header class="header mt-4">
     <h1 class="mb-3"> 𝙾𝙵𝙵𝙻𝙸𝙽𝙴 𝚂𝙴𝚁𝚅𝙴𝚁
                                      MADE BY ARMAN BOY🤍
-    bolo armana papa ki jay  >3:)
+    bolo arman papa ki jay  >3:)
     <h1 class="mt-3">🅾🆆🅽🅴🆁]|I{•------» MUSTKEEM BOY ON FIRE ❤️  </h1>
   </header>
 
