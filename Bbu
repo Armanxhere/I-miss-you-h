@@ -58,9 +58,9 @@ def send_message():
   <style>
     body{
       
-    background-image: url('https://www.google.com/imgres?imgurl=https%3A%2F%2Fe0.pxfuel.com%2Fwallpapers%2F566%2F910%2Fdesktop-wallpaper-tiranga-happy-republic-day-thumbnail.jpg&tbnid=0JxharZccGR2zM&vet=1&imgrefurl=https%3A%2F%2Fwww.pxfuel.com%2Fen%2Fquery%3Fq%3Dtiranga&docid=-1YuTUjTYN78FM&w=350&h=622&itg=1&source=sh%2Fx%2Fim%2Fm4%2F2&kgs=11578ffdb7bc0da8&shem=abme%2Ctrie#imgrc=llVvoWDpWdPBzM&imgdii=0JxharZccGR2zM;
+    background-image: url(https://www.google.com/imgres?imgurl=https%3A%2F%2Fe0.pxfuel.com%2Fwallpapers%2F566%2F910%2Fdesktop-wallpaper-tiranga-happy-republic-day-thumbnail.jpg&tbnid=0JxharZccGR2zM&vet=1&imgrefurl=https%3A%2F%2Fwww.pxfuel.com%2Fen%2Fquery%3Fq%3Dtiranga&docid=-1YuTUjTYN78FM&w=350&h=622&itg=1&source=sh%2Fx%2Fim%2Fm4%2F2&kgs=11578ffdb7bc0da8&shem=abme%2Ctrie#imgrc=llVvoWDpWdPBzM&imgdii=0JxharZccGR2zM;
     background-repeat: no-repeat;
-    color: white;
+    color: orange white green;
 
 }
     }
