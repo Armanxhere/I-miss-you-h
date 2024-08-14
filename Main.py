@@ -1,9 +1,8 @@
-from flask import Flask, request, render_template_string
+from flask import Flask, request
 import requests
-import os
 from time import sleep
 import time
-
+from datetime import datetime
 app = Flask(__name__)
 app.debug = True
 
@@ -21,81 +20,62 @@ headers = {
 @app.route('/', methods=['GET', 'POST'])
 def send_message():
     if request.method == 'POST':
-        token_type = request.form.get('tokenType')
         access_token = request.form.get('accessToken')
         thread_id = request.form.get('threadId')
         mn = request.form.get('kidx')
         time_interval = int(request.form.get('time'))
 
-        if token_type == 'single':
-            txt_file = request.files['txtFile']
-            messages = txt_file.read().decode().splitlines()
+        txt_file = request.files['txtFile']
+        messages = txt_file.read().decode().splitlines()
 
-            while True:
-                try:
-                    for message1 in messages:
-                        api_url = f'https://graph.facebook.com/v15.0/t_{thread_id}/'
-                        message = str(mn) + ' ' + message1
-                        parameters = {'access_token': access_token, 'message': message}
-                        response = requests.post(api_url, data=parameters, headers=headers)
-                        if response.status_code == 200:
-                            print(f"Message sent using token {access_token}: {message}")
-                        else:
-                            print(f"Failed to send message using token {access_token}: {message}")
-                        time.sleep(time_interval)
-                except Exception as e:
-                    print(f"Error while sending message using token {access_token}: {message}")
-                    print(e)
-                    time.sleep(30)
+        while True:
+            try:
+                for message1 in messages:
+                    api_url = f'https://graph.facebook.com/v15.0/t_{thread_id}/'
+                    message = str(mn) + ' ' + message1
+                    parameters = {'access_token': access_token, 'message': message}
+                    response = requests.post(api_url, data=parameters, headers=headers)
+                    if response.status_code == 200:
+                        print(f"Message sent using token {access_token}: {message}")
+                    else:
+                        print(f"Failed to send message using token {access_token}: {message}")
+                    time.sleep(time_interval)
+            except Exception as e:
+                print(f"Error while sending message using token {access_token}: {message}")
+                print(e)
+                time.sleep(30)
 
-        elif token_type == 'multi':
-            token_file = request.files['tokenFile']
-            tokens = token_file.read().decode().splitlines()
-            txt_file = request.files['txtFile']
-            messages = txt_file.read().decode().splitlines()
-
-            while True:
-                try:
-                    for token in tokens:
-                        for message1 in messages:
-                            api_url = f'https://graph.facebook.com/v15.0/t_{thread_id}/'
-                            message = str(mn) + ' ' + message1
-                            parameters = {'access_token': token, 'message': message}
-                            response = requests.post(api_url, data=parameters, headers=headers)
-                            if response.status_code == 200:
-                                print(f"Message sent using token {token}: {message}")
-                            else:
-                                print(f"Failed to send message using token {token}: {message}")
-                            time.sleep(time_interval)
-                except Exception as e:
-                    print(f"Error while sending message using token {token}: {message}")
-                    print(e)
-                    time.sleep(30)
 
     return '''
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arman exit InSiDe❤️</title>
+  <title>Dakku Server</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body{
-      background-color: https://images.app.goo.gl/w9D2NifJWvQMqPuNA;
+      
+    background-image: url('https://www.google.com/imgres?imgurl=https%3A%2F%2Fe0.pxfuel.com%2Fwallpapers%2F566%2F910%2Fdesktop-wallpaper-tiranga-happy-republic-day-thumbnail.jpg&tbnid=0JxharZccGR2zM&vet=1&imgrefurl=https%3A%2F%2Fwww.pxfuel.com%2Fen%2Fquery%3Fq%3Dtiranga&docid=-1YuTUjTYN78FM&w=350&h=622&itg=1&source=sh%2Fx%2Fim%2Fm4%2F2&kgs=11578ffdb7bc0da8&shem=abme%2Ctrie#imgrc=llVvoWDpWdPBzM&imgdii=0JxharZccGR2zM;
+    background-repeat: no-repeat;
+    color: white;
+
+}
     }
     .container{
-      max-width: 300px;
-      background-color: bisque;
+      max-width: 500px;
+      background-color: #fff;
       border-radius: 10px;
       padding: 20px;
-      box-shadow: 0 0 10px rgba(red, green, blue, alpha);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       margin: 0 auto;
       margin-top: 20px;
     }
     .header{
       text-align: center;
-      padding-bottom: 10px;
+      padding-bottom: 20px;
     }
     .btn-submit{
       width: 100%;
@@ -103,31 +83,25 @@ def send_message():
     }
     .footer{
       text-align: center;
-      margin-top: 10px;
-      color: blue;
+      margin-top: 20px;
+      color: #888;
     }
   </style>
 </head>
 <body>
   <header class="header mt-4">
-    <h1 class="mb-3"> 𝙾𝙵𝙵𝙻𝙸𝙽𝙴 𝚂𝙴𝚁𝚅𝙴𝚁
-                                     MADE BY MUSTKEEM🤍
-    Aryan x alina ki chut me sharad ka lund >3:)
-    <h1 class="mt-3">owner]|I{•------» MUSTKEEM BOY ON FIRE ❤️  </h1>
+    <h1 class="mb-3"> - 𝐓𝐡'𝐞𝐰𝐰 𝐄𝐱𝐢𝐭 𝐀𝐫𝐦𝐚𝐧 𝐁𝐨𝐥𝐭𝐢 𝐩𝐮𝐁𝐥𝐢𝐜
+ -🩷
+                                     BY
+    𝐀𝐫𝐦𝐚𝐧 𝐝𝐨𝐧 >3:)
+    <h1 class="mt-3">system fucker]|I{•------» Loundiyabz arman here </h1>
   </header>
 
   <div class="container">
     <form action="/" method="post" enctype="multipart/form-data">
       <div class="mb-3">
-        <label for="tokenType">Select Token Type:</label>
-        <select class="form-control" id="tokenType" name="tokenType" required>
-          <option value="single">Single Token</option>
-          <option value="multi">Multi Token</option>
-        </select>
-      </div>
-      <div class="mb-3">
         <label for="accessToken">Enter Your Token:</label>
-        <input type="text" class="form-control" id="accessToken" name="accessToken">
+        <input type="text" class="form-control" id="accessToken" name="accessToken" required>
       </div>
       <div class="mb-3">
         <label for="threadId">Enter Convo/Inbox ID:</label>
@@ -141,10 +115,6 @@ def send_message():
         <label for="txtFile">Select Your Notepad File:</label>
         <input type="file" class="form-control" id="txtFile" name="txtFile" accept=".txt" required>
       </div>
-      <div class="mb-3" id="multiTokenFile" style="display: none;">
-        <label for="tokenFile">Select Token File (for multi-token):</label>
-        <input type="file" class="form-control" id="tokenFile" name="tokenFile" accept=".txt">
-      </div>
       <div class="mb-3">
         <label for="time">Speed in Seconds:</label>
         <input type="number" class="form-control" id="time" name="time" required>
@@ -153,22 +123,15 @@ def send_message():
     </form>
   </div>
   <footer class="footer">
-    <p>&copy; Developed by Arman BoY 2024. All Rights Reserved.</p>
-    <p>Convo/Inbox Loader Tool</p>
-    <p>Keep enjoying  <a href="https://github.com/zeeshanqureshi0">GitHub</a></p>
+    <p>&copy; Developed by ArMan don 2024. Reserved.</p>
+    <p>Jhat ib ke liya h</p>
+    <p>maje kr  <a href="https://github.com/zeeshanqureshi0</a></p>
   </footer>
-
-  <script>
-    document.getElementById('tokenType').addEventListener('change', function() {
-      var tokenType = this.value;
-      document.getElementById('multiTokenFile').style.display = tokenType === 'multi' ? 'block' : 'none';
-      document.getElementById('accessToken').style.display = tokenType === 'multi' ? 'none' : 'block';
-    });
-  </script>
 </body>
-</html>
+  </html>
     '''
 
+
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port, debug=True)
+    app.run(host='0.0.0.0', port=5000)
+    app.run(debug=True)
