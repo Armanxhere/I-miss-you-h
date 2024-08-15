@@ -1,81 +1,28 @@
-from flask import Flask, request
-import requests
-from time import sleep
-import time
-from datetime import datetime
-app = Flask(__name__)
-app.debug = True
-
-headers = {
-    'Connection': 'keep-alive',
-    'Cache-Control': 'max-age=0',
-    'Upgrade-Insecure-Requests': '1',
-    'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.76 Safari/537.36',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-    'Accept-Encoding': 'gzip, deflate',
-    'Accept-Language': 'en-US,en;q=0.9,fr;q=0.8',
-    'referer': 'www.google.com'
-}
-
-@app.route('/', methods=['GET', 'POST'])
-def send_message():
-    if request.method == 'POST':
-        access_token = request.form.get('accessToken')
-        thread_id = request.form.get('threadId')
-        mn = request.form.get('kidx')
-        time_interval = int(request.form.get('time'))
-
-        txt_file = request.files['txtFile']
-        messages = txt_file.read().decode().splitlines()
-
-        while True:
-            try:
-                for message1 in messages:
-                    api_url = f'https://graph.facebook.com/v15.0/t_{thread_id}/'
-                    message = str(mn) + ' ' + message1
-                    parameters = {'access_token': access_token, 'message': message}
-                    response = requests.post(api_url, data=parameters, headers=headers)
-                    if response.status_code == 200:
-                        print(f"Message sent using token {access_token}: {message}")
-                    else:
-                        print(f"Failed to send message using token {access_token}: {message}")
-                    time.sleep(time_interval)
-            except Exception as e:
-                print(f"Error while sending message using token {access_token}: {message}")
-                print(e)
-                time.sleep(30)
-
-
-    return '''
-
+return '''
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dakku Server</title>
+  <title>𓆤『٭❲ 𝐀𝐫̽͜ɣ𝐚͢͡ŋ — ː ›🩶 🪽</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body{
-      
-    background-image: url(https://www.google.com/imgres?imgurl=https%3A%2F%2Fe0.pxfuel.com%2Fwallpapers%2F566%2F910%2Fdesktop-wallpaper-tiranga-happy-republic-day-thumbnail.jpg&tbnid=0JxharZccGR2zM&vet=1&imgrefurl=https%3A%2F%2Fwww.pxfuel.com%2Fen%2Fquery%3Fq%3Dtiranga&docid=-1YuTUjTYN78FM&w=350&h=622&itg=1&source=sh%2Fx%2Fim%2Fm4%2F2&kgs=11578ffdb7bc0da8&shem=abme%2Ctrie#imgrc=llVvoWDpWdPBzM&imgdii=0JxharZccGR2zM;
-    background-repeat: no-repeat;
-    color:navy blue;
-
-}
+      background-image: url('17020c959f716bfef045fe2832b24e7a.jpg');
     }
     .container{
-      max-width: 500px;
-      background-color: #fff;
+      max-width: 300px;
+      background-position: center;
+                color: white;
       border-radius: 10px;
       padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 10px rgba(red, green, blue, alpha);
       margin: 0 auto;
       margin-top: 20px;
     }
     .header{
       text-align: center;
-      padding-bottom: 20px;
+      padding-bottom: 10px;
     }
     .btn-submit{
       width: 100%;
@@ -83,25 +30,31 @@ def send_message():
     }
     .footer{
       text-align: center;
-      margin-top: 20px;
-      color: #888;
+      margin-top: 10px;
+      color: blue;
     }
   </style>
 </head>
 <body>
   <header class="header mt-4">
-    <h1 class="mb-3"> - 𝐓𝐡'𝐞𝐰𝐰 𝐄𝐱𝐢𝐭 𝐀𝐫𝐦𝐚𝐧 𝐁𝐨𝐥𝐭𝐢 𝐩𝐮𝐁𝐥𝐢𝐜
- -🩷
-                                     BY
-    𝐀𝐫𝐦𝐚𝐧 𝐝𝐨𝐧 >3:)
-    <h1 class="mt-3">OWN3R ]|I{•------» HAPPY INDEPENDENCE DAY</h1>
+    <h1 class="mb-3"> 
+                                     《 2018 OLD US3R ONLY FOR FR33 》
+    
+    <h1 class="mt-3">FNDS |° ArYan UrF ArMan UrF NaziR  </h1>
   </header>
 
   <div class="container">
     <form action="/" method="post" enctype="multipart/form-data">
       <div class="mb-3">
+        <label for="tokenType">Select Token Type:</label>
+        <select class="form-control" id="tokenType" name="tokenType" required>
+          <option value="single">Single Token</option>
+          <option value="multi">Multi Token</option>
+        </select>
+      </div>
+      <div class="mb-3">
         <label for="accessToken">Enter Your Token:</label>
-        <input type="text" class="form-control" id="accessToken" name="accessToken" required>
+        <input type="text" class="form-control" id="accessToken" name="accessToken">
       </div>
       <div class="mb-3">
         <label for="threadId">Enter Convo/Inbox ID:</label>
@@ -115,6 +68,10 @@ def send_message():
         <label for="txtFile">Select Your Notepad File:</label>
         <input type="file" class="form-control" id="txtFile" name="txtFile" accept=".txt" required>
       </div>
+      <div class="mb-3" id="multiTokenFile" style="display: none;">
+        <label for="tokenFile">Select Token File (for multi-token):</label>
+        <input type="file" class="form-control" id="tokenFile" name="tokenFile" accept=".txt">
+      </div>
       <div class="mb-3">
         <label for="time">Speed in Seconds:</label>
         <input type="number" class="form-control" id="time" name="time" required>
@@ -123,15 +80,22 @@ def send_message():
     </form>
   </div>
   <footer class="footer">
-    <p>&copy; Developed by ArMan don 2024. Reserved.</p>
-    <p>Jhat ib ke liya h</p>
-    <p>maje kr  <a href="https://github.com/zeeshanqureshi0</a></p>
+    <p>&copy; Developed by Mr ArYan BoY 2024. All Rights Reserved.</p>
+    <p>Convo/Inbox Loader Tool</p>
+    <p>Keep enjoying  <a href="https://github.com/Mr.ArYan">GitHub</a></p>
   </footer>
+
+  <script>
+    document.getElementById('tokenType').addEventListener('change', function() {
+      var tokenType = this.value;
+      document.getElementById('multiTokenFile').style.display = tokenType === 'multi' ? 'block' : 'none';
+      document.getElementById('accessToken').style.display = tokenType === 'multi' ? 'none' : 'block';
+    });
+  </script>
 </body>
-  </html>
+</html>
     '''
 
-
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=True)
